@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileFinder</class>
+ <widget class="QMainWindow" name="FileFinder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>694</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FileFinder</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="pgrdLayout">
+        <item row="11" column="0" colspan="5">
+         <widget class="QTextEdit" name="m_ptxtResult"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The low value of size(from)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="pcmdFind">
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The high value of size(to)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="stopButton">
+          <property name="text">
+           <string>Stop</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" rowspan="2">
+         <widget class="QCheckBox" name="checkBoxFindSize">
+          <property name="text">
+           <string>Find by size</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QPushButton" name="pcmdDir">
+          <property name="text">
+           <string>Select</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>fileopen.xpm</normaloff>fileopen.xpm</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QPushButton" name="pauseButton">
+          <property name="text">
+           <string>Pause</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" rowspan="2">
+         <widget class="QCheckBox" name="checkBoxFindDate">
+          <property name="text">
+           <string>Find by date
+created</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The low date created(from)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The high date created(to)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2" colspan="3">
+         <widget class="QSpinBox" name="lowSizeSpinBox"/>
+        </item>
+        <item row="8" column="2" colspan="3">
+         <widget class="QSpinBox" name="highSizeSpinBox"/>
+        </item>
+        <item row="9" column="2" colspan="3">
+         <widget class="QDateTimeEdit" name="lowDateTimeEdit"/>
+        </item>
+        <item row="10" column="2" colspan="3">
+         <widget class="QDateTimeEdit" name="highDateTimeEdit"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QCheckBox" name="checkBoxFindName">
+          <property name="text">
+           <string>Find by type of file.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QCheckBox" name="checkBoxFindType">
+          <property name="text">
+           <string>Find by name of file.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2" rowspan="3" colspan="3">
+         <widget class="QLineEdit" name="m_ptxtMask">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" rowspan="2">
+         <widget class="QLabel" name="plblMask">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;File Counter&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="buddy">
+           <cstring>m_ptxtMask</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="plblDir">
+          <property name="text">
+           <string>Directory to index files.</string>
+          </property>
+          <property name="buddy">
+           <cstring>m_ptxtDir</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="3">
+         <widget class="QLineEdit" name="m_ptxtDir">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" rowspan="2" colspan="3">
+         <widget class="QLCDNumber" name="lcd">
+          <property name="baseSize">
+           <size>
+            <width>220</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Filled</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="4">
+         <widget class="QLabel" name="dirPath">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>694</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
